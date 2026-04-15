@@ -13,7 +13,6 @@ module sdf_stage #(
     );
 
     wire signed [7:0] sr_out_r, sr_out_i, sr_in_r, sr_in_i;
-
     delay_line #(.DEPTH(DELAY)) dl (
         .clk(clk), .reset_n(reset_n),
         .in_r(sr_in_r), .in_i(sr_in_i),
